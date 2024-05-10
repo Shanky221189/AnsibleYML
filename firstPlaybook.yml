@@ -14,6 +14,10 @@
       dnf :
         name : tree
         state : present
+    - name : install apache
+      dnf :
+        name : httpd
+        state : present
 
      
 
