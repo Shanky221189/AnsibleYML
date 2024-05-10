@@ -1,0 +1,17 @@
+---
+- myStudents: 
+- name: mayank
+  phone: 7829868036
+  address: 
+      doorNo : 01
+      streetNo : 02
+
+
+- name: yamini
+  phone: 7829321873
+  address: 
+    doorNo : 01
+    streetNo : 02
+
+
+
