@@ -3,8 +3,19 @@
   become : yes
   tasks :
   - name : execute linux command
-    command : ls -lt
+    command : hostname -f
     register : myfirsttaskresult
   - name : display my first task result
     debug : 
      msg : "{{myfirsttaskresult}}"
+  - name : install git
+    dnf :
+     name : git
+     state : present
+    when : myfirsttaskresult.stderr!=""
+  - name : install tree
+    dnf:
+     name : tree
+     state : present
+    when : myfirsttaskresult.stderr=="" 
+
