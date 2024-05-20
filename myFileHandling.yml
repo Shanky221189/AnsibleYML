@@ -7,4 +7,13 @@
      copy :
       src : f1
       dest : /home/mayank/mytestFile
+   - name : install webServers
+     dnf:
+      name : httpd
+      state : present
+   - name: Download foo.conf
+     ansible.builtin.get_url:
+      url: http://example.com/path/file.conf
+      dest: /etc/foo.conf
+      force_basic_auth : yes
 
