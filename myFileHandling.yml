@@ -7,7 +7,7 @@
    - name : start webServers
      service :
       name : httpd
-      state : started
+      state : stopped
      notify : copyfile
 
 
