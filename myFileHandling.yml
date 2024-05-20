@@ -8,6 +8,8 @@
      service :
       name : httpd
       state : started
+      notify : copyfile
+
 
     
    - name: Download foo.conf
