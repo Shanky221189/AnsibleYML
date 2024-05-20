@@ -3,10 +3,7 @@
   become : yes
   tasks :
    - include_tasks : myfile.yml
-   - name : copy file
-     copy :
-      src : f1
-      dest : /home/mayank/mytestFile
+   
    - name : start webServers
      service :
       name : httpd
@@ -18,4 +15,12 @@
       url: http://example.com/path/file.conf
       dest: /etc/foo.conf
       force_basic_auth : yes
+      notify : copyfile
+
+  handlers :
+   - name : copyfile
+     copy :
+      src : f1
+      dest : /home/mayank/mytestFile
+
 
