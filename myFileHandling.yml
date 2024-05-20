@@ -7,10 +7,12 @@
      copy :
       src : f1
       dest : /home/mayank/mytestFile
-   - name : install webServers
-     dnf:
+   - name : start webServers
+     service :
       name : httpd
-      state : present
+      state : started
+      
+    
    - name: Download foo.conf
      ansible.builtin.get_url:
       url: http://example.com/path/file.conf
