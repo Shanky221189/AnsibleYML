@@ -1,0 +1,9 @@
+---
+- hosts : webServers
+  become : yes
+  tasks :
+    - name  : install java on webServers
+      dnf   :
+        name  : "{{myJavaPackage}}"
+        state : present
+      when  : ansible_os_family=="RedHat"
