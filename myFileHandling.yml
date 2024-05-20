@@ -19,6 +19,7 @@
   #     force_basic_auth : yes
   #     notify : copyfile
 
+        #if any change is there then only handlers will run from above task'(orange host)
   handlers :
    - name : copyfile
      copy :
