@@ -1,5 +1,5 @@
 ---
-- hosts : all
+- hosts : webServers
   become : yes
   tasks :
     - name : install git
@@ -16,7 +16,7 @@
         state : present
     - name : install apache
       dnf :
-        name : httpd
+        name : "{{mywebpack}}"
         state : present
 
      
