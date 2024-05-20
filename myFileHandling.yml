@@ -5,6 +5,6 @@
    - include_tasks : myfile.yml
    - name : copy file
      copy :
-     src : f1
-     dest : /home/mayank/mytestFile
+      src : f1
+      dest : /home/mayank/mytestFile
 
