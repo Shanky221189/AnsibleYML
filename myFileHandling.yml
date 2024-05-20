@@ -8,7 +8,7 @@
      service :
       name : httpd
       state : started
-      notify : copyfile
+     notify : copyfile
 
 
     
