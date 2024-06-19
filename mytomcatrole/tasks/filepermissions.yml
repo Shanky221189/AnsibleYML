@@ -1,0 +1,9 @@
+---
+- name : set permissions on start up
+  command : chmod +x /opt/apache-tomcat-9.0.89/bin/startup.sh
+   
+
+
+- name : set permissions on shut down
+  command : chmod +x /opt/apache-tomcat-9.0.89/bin/shutdown.sh
+

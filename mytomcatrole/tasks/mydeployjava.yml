@@ -1,0 +1,9 @@
+---
+- name : java deploy
+  get_url : 
+    url : https://mywarfile26jan24.s3.amazonaws.com/login.war
+    dest : /opt/apache-tomcat-9.0.89/webapps/login.war
+    force_basic_auth : yes
+
+
+  
