@@ -2,7 +2,7 @@
 - hosts : webServers
   become : yes
   roles :
-   - {role: mytomcatrole, when: ansible_os_family="RedHat"}
+   - {role: mytomcatrole, when: ansible_os_family=="RedHat"}
      
 
     
