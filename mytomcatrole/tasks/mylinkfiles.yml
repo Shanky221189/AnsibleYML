@@ -2,10 +2,10 @@
 - name : link tomcat up
   command : 
    cmd : ln -s /opt/apache-tomcat-9.0.89/bin/startup.sh /usr/local/bin/tomcatup
-   creates : /opt/apache-tomcat-9.0.89/bin/startup.sh
+   #creates : /opt/apache-tomcat-9.0.89/bin/startup.sh
 
 
 - name : link tomcat up
   command : 
    cmd : ln -s /opt/apache-tomcat-9.0.89/bin/shutdown.sh /usr/local/bin/tomcatdown
-   creates : /opt/apache-tomcat-9.0.89/bin/shutdown.sh
+   #creates : /opt/apache-tomcat-9.0.89/bin/shutdown.sh
